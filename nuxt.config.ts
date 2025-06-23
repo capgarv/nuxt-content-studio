@@ -14,5 +14,17 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'de'
+      },
+      title: 'test-nuxt-content',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ]
+    }
+  }
 })
